@@ -36,66 +36,55 @@
       <h1 data-aos="zoom-in">You have severe chronic kidney disease which may lead to cancer.</h1>
       <h2 data-aos="fade-up">THRIVING AND LIVING A HEALTHY, WONDERFUL LIFE AGAIN IS POSSIBLE, NOT JUST SURVIVING.</h2>
       <a data-aos="fade-up" href="#about" class="btn-get-started scrollto">Explore</a>
-        {% else %}
-        <h1 data-aos="zoom-in">You have no signs of kidney cancer.</h1>
-        <a data-aos="fade-up" href="#about" class="btn-get-started scrollto">Explore</a>
+      <a data-aos="fade-up" href="/" class="btn">Take Another Test</a>
+    </div>       
+  </section>
+ 
+
+        
+      <section id="hero" style="color:white">
+        <div class="hero-container">
+          <a href="index.html" class="hero-logo" data-aos="zoom-in"></a>
+
+
+              
+          <!-- ======= About Us Section ======= -->
+
+ <section id="about" class="about">
+    <style>
+      section {
+        background-color: green;
+      } </style>
+        <div class="section-title" data-aos="fade-up" >
+
+                <h1 style="color: white;">Care to be taken</h1>
+                <p style="color: white;">Living with chronic kidney disease (CKD) can be challenging, but it's important to remember that you have the power to take control of your health and improve your quality of life. By making small, positive changes in your lifestyle, such as eating a kidney-friendly diet, staying active, and following your treatment plan, you can slow the progression of CKD and reduce your risk of complications. With the right knowledge, support, and determination, you can manage CKD and live a fulfilling life. So, stay positive, stay motivated, and take care of yourself. You've got this!"</p>
+              </div>
+      
+              <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/c6DgAa0N3ME?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CBtj0uIqgHU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+
+  </div>
+</section><!-- End About Us Section -->  
+
+          {% else %}
+        <h1 data-aos="zoom-in">You have no signs of chronic kidney disease.</h1>
+        <a data-aos="fade-up" href="#testimonials" class="btn-get-started scrollto">Explore</a>
+        <a data-aos="fade-up" href="/" class="btn">Take Another Test</a>
         {% endif %}
-      
-      
+    
     </div>
   </section><!-- End Hero -->
         {% endblock %}
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container">
 
-      <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
-      <div class="logo d-block d-lg-none">
-        <a href="index.html"><img src="{{url_for('static',filename='img/logo.png')}}" alt="" class="img-fluid"></a>
-      </div>
+ 
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul class="nav-inner">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="#about">Demo</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="/login">Login</a></li>
-         
-
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-
-    <section id="about" class="about">
-      <div class="container">
-
-            <div class="section-title" data-aos="fade-up">
-                    <h2>Care to be taken</h2>
-                    <p style="color: black;">Living with chronic kidney disease (CKD) can be challenging, but it's important to remember that you have the power to take control of your health and improve your quality of life. By making small, positive changes in your lifestyle, such as eating a kidney-friendly diet, staying active, and following your treatment plan, you can slow the progression of CKD and reduce your risk of complications. With the right knowledge, support, and determination, you can manage CKD and live a fulfilling life. So, stay positive, stay motivated, and take care of yourself. You've got this!"</p>
-                  </div>
-          
-                  <div class="row">
-                    <div class="col-lg-6" data-aos="fade-right">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/c6DgAa0N3ME?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/CBtj0uIqgHU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                  </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-   
-
-    
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
             <div class="container" data-aos="zoom-in">
