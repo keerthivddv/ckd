@@ -960,7 +960,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 60px 0;
-  background: url("static/img/images.jpg") no-repeat;
+  background: rgba(34, 134, 201, 0.671);
   background-position: center center;
   background-size: cover;
   position: relative;
