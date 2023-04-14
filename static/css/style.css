@@ -960,7 +960,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 60px 0;
-  background: url("../img/download.jpg") no-repeat;
+  background: url("static/img/testimonials-bg-mobile.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
