@@ -1,6 +1,6 @@
 # Chronic Kidney Disease Prediction
 
-### To run the application
+### To run application
 
 1. Install all the libraries
 $ pip install -r requirements.txt
