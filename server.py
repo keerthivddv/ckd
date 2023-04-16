@@ -12,34 +12,6 @@ app = Flask(__name__)
 def root():
     return render_template('index.html')
 
-
-@app.route('/login', methods=['POST'])
-def do_admin_login():
-    if request.form['password'] == 'user1' and request.form['username'] == 'user1':
-        session['logged_in'] = True
-        return render_template('index.html')
-    elif request.form['password'] == 'admin' and request.form['username'] == 'admin':
-        session['logged_in'] = True
-        return displayrecords()
-    else :
-        return render_template('loginerror.html')
-
-@app.route('/displayrecords',methods=['GET'])
-def displayrecords():
-    df = pd.read_csv('dataset/records.csv')
-    return render_template('displayrecords.html', tables=[df.to_html(classes='data', header="true")])
-
-
-@app.route('/login',methods=['GET'])
-def login():
-    return render_template('login.html')
-
-@app.route("/logout")
-def logout():
-    session['logged_in'] = False
-    return root()
-
-
 @app.route('/predict', methods=["POST"])
 def predict():
     age = int(request.form['age'])
